@@ -1,6 +1,6 @@
 {
     "name": "zalgo-promise",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "A promise that settles synchronously when it can. Then-handlers on an already-settled promise run before the current tick ends, so chains that must stay inside a user gesture or avoid microtask lag in a background window can.",
     "keywords": [
         "promise",
