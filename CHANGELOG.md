@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/bluepnume/zalgo-promise/compare/v2.0.1...v3.0.0) (2026-10-22)
+
+### ⚠ BREAKING CHANGES
+
+* published as `zalgo-promise` (unscoped) again
+* ES modules and TypeScript only: no CommonJS entry, no UMD bundle, no Flow types
+* `then`/`catch`/`finally`/`try` throw `TypeError` (was `Error`) for a non-function handler
+* removed the `window.constructor` check and the debug stack capture that existed for old browsers and build flags
+
+* ported to cugel-scripts; ES2019 output with `main`/`module`/`types` fallbacks next to `exports`
+* unhandled-rejection de-duplication no longer holds every reported error forever
+
 ### [2.0.1](https://github.com/krakenjs/zalgo-promise/compare/v2.0.0...v2.0.1) (2022-02-27)
 
 
